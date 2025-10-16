@@ -1,6 +1,12 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Award, Globe, Users, Target } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About Us - Zenith Digital Solution | Our Story & Values",
+  description: "Learn about Zenith Digital Solution, a team of passionate technologists helping businesses thrive in the digital age. 500+ projects delivered, 200+ happy clients across 15+ countries since 2015.",
+}
 
 export default function AboutPage() {
   const values = [

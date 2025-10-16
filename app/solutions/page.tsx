@@ -2,6 +2,12 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Cloud, Code, Database, Lock, Smartphone, Zap } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Our Solutions - Cloud, Development, Analytics & More | Zenith Digital",
+  description: "Explore our comprehensive digital solutions: Cloud Infrastructure, Custom Development, Data Analytics, Cybersecurity, Mobile Apps, and DevOps Automation. Transform your business today.",
+}
 
 export default function SolutionsPage() {
   const solutions = [
