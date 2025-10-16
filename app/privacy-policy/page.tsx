@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
         <section style={{ marginBottom: '2rem' }}>
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.5rem' }}>8. Contact Us</h2>
           <p>
-            If you have any questions about this Privacy Policy, please contact us at <a href="mailto:hello@zenithdigital.com" style={{ color: '#2563eb' }}>hello@zenithdigital.com</a>.
+            If you have any questions about this Privacy Policy, please contact us at <a href="mailto:info@zenithdigitalsolution.com.np" style={{ color: '#2563eb' }}>info@zenithdigitalsolution.com.np</a>.
           </p>
         </section>
       </main>
