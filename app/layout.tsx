@@ -32,11 +32,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark ${inter.variable} ${spaceGrotesk.variable}`}>
+
       <body className="font-sans antialiased">
         <AuthProvider>
           <Suspense fallback={null}>{children}</Suspense>
         </AuthProvider>
         <Analytics />
+        
+        {/* JSON-LD Schema Markup */}
+        <Script id="schema-org" type="application/ld+json" strategy="beforeInteractive">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Corporation",
+              "name": "Zenith Digital Solution",
+              "alternateName": "Zenith",
+              "url": "https://zenithdigitalsolution.com.np/",
+              "logo": "https://www.facebook.com/photo?fbid=122101583217065428&set=a.122101583247065428",
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=61581962867329",
+                "https://www.linkedin.com/company/zenith-digital-solution/"
+              ]
+            }
+          `}
+        </Script>
         
         {/* Google Analytics */}
         <Script
