@@ -20,10 +20,9 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "Zenith Digital Solution - Cloud Solutions & Digital Transformation",
+  title: "Zenith Digital Solution - Cloud & Digital Transformation",
   description:
-    "Leading IT solutions provider specializing in cloud infrastructure, cybersecurity, and digital transformation services.",
-  generator: "v0.app",
+    "IT solutions provider specializing in cloud infrastructure, cybersecurity, and digital transformation. Empowering businesses worldwide.",
 }
 
 export default function RootLayout({
