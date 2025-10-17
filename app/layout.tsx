@@ -20,9 +20,73 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "Zenith Digital Solution - Cloud & Digital Transformation",
+  metadataBase: new URL("https://zenithdigitalsolution.com.np"),
+  title: {
+    default: "Zenith Digital Solution - Cloud & Digital Transformation",
+    template: "%s | Zenith Digital Solution",
+  },
   description:
     "IT solutions provider specializing in cloud infrastructure, cybersecurity, and digital transformation. Empowering businesses worldwide.",
+  keywords: [
+    "cloud solutions",
+    "digital transformation",
+    "IT services",
+    "cloud infrastructure",
+    "cybersecurity",
+    "custom development",
+    "data analytics",
+    "mobile applications",
+    "DevOps automation",
+    "Nepal IT company",
+  ],
+  authors: [{ name: "Zenith Digital Solution" }],
+  creator: "Zenith Digital Solution",
+  publisher: "Zenith Digital Solution",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: "Zenith Digital Solution - Cloud & Digital Transformation",
+    description:
+      "IT solutions provider specializing in cloud infrastructure, cybersecurity, and digital transformation. Empowering businesses worldwide.",
+    url: "https://zenithdigitalsolution.com.np/",
+    siteName: "Zenith Digital Solution",
+    images: [
+      {
+        url: "https://www.facebook.com/photo?fbid=122101583217065428&set=a.122101583247065428",
+        width: 1200,
+        height: 630,
+        alt: "Zenith Digital Solution",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zenith Digital Solution - Cloud & Digital Transformation",
+    description:
+      "IT solutions provider specializing in cloud infrastructure, cybersecurity, and digital transformation. Empowering businesses worldwide.",
+    images: ["https://www.facebook.com/photo?fbid=122101583217065428&set=a.122101583247065428"],
+    creator: "@zenithdigital",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://zenithdigitalsolution.com.np/",
+  },
+  category: "technology",
 }
 
 export default function RootLayout({
