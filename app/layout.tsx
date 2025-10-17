@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Space_Grotesk } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script"
 import "./globals.css"
 import { Suspense } from "react"
 import { AuthProvider } from "@/contexts/auth-context"
@@ -37,6 +38,20 @@ export default function RootLayout({
           <Suspense fallback={null}>{children}</Suspense>
         </AuthProvider>
         <Analytics />
+        
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RF20MDQ75T"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RF20MDQ75T');
+          `}
+        </Script>
       </body>
     </html>
   )
